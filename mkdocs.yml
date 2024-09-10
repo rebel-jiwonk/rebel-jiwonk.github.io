@@ -1,0 +1,19 @@
+site_name: Rebellions Datasheet
+nav:
+    - Home: index.md
+    - About: about.md
+    - Datasheets:
+        - RBLN-CA12:
+            - English: en-rbln-ca12.md
+            - Chinese: cn-rbln-ca12.md
+theme: readthedocs
+markdown_extensions:
+    - md_in_html
+plugins:
+    - search
+    - pdf-export:
+        verbose: true
+        media_type: pdf-export
+        combined: true
+extra_css:
+  - extra.css
