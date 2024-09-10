@@ -90,6 +90,18 @@ pip install -r requirements.txt
 - **Dependencies**:
   Double-check your `requirements.txt` to ensure all dependencies are listed. If a specific package is missing or causing issues, install it manually with `pip`.
 
+## Deploying to GitHub Pages
+
+To deploy your MkDocs app to GitHub Pages, follow these steps:
+
+1. **Ensure you are on the primary working branch** (usually `master` or `main`) of your git repository where you maintain the source documentation.
+
+2. **Run the following command** to deploy your site:
+
+   ```bash
+   mkdocs gh-deploy
+   ```
+
 ## Conclusion
 
 By following these instructions, you should be able to set up your Python environment, run `venv`, and work with `mkdocs` effectively. If you have any further questions or run into issues not covered in this guide, consult the relevant documentation or community forums for additional support.
