@@ -1,4 +1,5 @@
 site_name: Rebellions Datasheet
+site_url: http://localhost/
 nav:
     - Home: index.md
     - About: about.md
@@ -6,7 +7,10 @@ nav:
         - RBLN-CA12:
             - English: en-rbln-ca12.md
             - Chinese: cn-rbln-ca12.md
-theme: readthedocs
+theme: 
+    name: readthedocs
+extra_javascript:
+  - assets/js/versioning.js
 markdown_extensions:
     - md_in_html
 plugins:
@@ -17,3 +21,8 @@ plugins:
         combined: false
 extra_css:
   - extra.css
+
+extra:
+  version:
+    alias: true
+    provider: mike  

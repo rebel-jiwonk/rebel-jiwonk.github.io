@@ -4,18 +4,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="http://localhost/0.2/en-rbln-ca12/" rel="canonical"/>
 <link href="../img/favicon.ico" rel="shortcut icon"/>
 <title>English - Rebellions Datasheet</title>
 <link href="../css/theme.css" rel="stylesheet"/>
 <link href="../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <link href="../extra.css" rel="stylesheet"/>
+<link href="../css/version-select.css" rel="stylesheet"/>
 <script>
         // Current page data
         var mkdocs_page_name = "English";
         var mkdocs_page_input_path = "en-rbln-ca12.md";
-        var mkdocs_page_url = null;
+        var mkdocs_page_url = "/0.2/en-rbln-ca12/";
       </script>
 <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
@@ -29,7 +30,10 @@
 <div class="wy-side-scroll">
 <div class="wy-side-nav-search">
 <a class="icon icon-home" href=".."> Rebellions Datasheet
-        </a><div role="search">
+        </a>
+<div class="version">
+          {'alias': True, 'provider': 'mike'}
+        </div><div role="search">
 <form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
 <input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
 </form>
@@ -310,18 +314,30 @@ Table 4.  Board Environmental and Reliability Specifications
 <hr/>
 <h2 id="form-factor">Form Factor</h2>
 <figure>
-<img alt="Figure 3" src="../assets/images/rblnca12_figure_3.png"/>
+<img alt="Figure 3" src="../assets/images/rblnca12_figure_3-1.png"/>
 <figcaption>
  (CARD DIMENSIONS)
   </figcaption>
 </figure>
 <figure>
-<img alt="Figure 4" src="../assets/images/rblnca12_figure_4-1.png"/>
-<img alt="Figure 4" src="../assets/images/rblnca12_figure_4-2.png"/>
+<img alt="Figure 3" src="../assets/images/rblnca12_figure_3-2.png"/>
+<img alt="Figure 3" src="../assets/images/rblnca12_figure_3-3.png"/>
 <figcaption>
  (ISOVIEW) <br/> Figure 3. RBLN-CA12 PCIe Card Dimensions
   </figcaption>
 </figure>
+<h2 id="board-diagram">Board Diagram</h2>
+<p>Figure 4 shows the components of the RBLN-CA12 card with the ATOM™ chip. The card has a Satellite Management Controller (SMC) that performs board management operations while communicating to the host or BMC units via SMBus interfaces.</p>
+<figure>
+<img alt="Figure 4" src="../assets/images/rblnca12_figure_4.png"/>
+<figcaption>
+ (ISOVIEW) <br/> Figure 4. RBLN-CA12 Board Diagram
+  </figcaption>
+</figure>
+<h2 id="pci-connectordata-rate">PCI Connector/Data Rate</h2>
+<p>The RBLN-CA12 card uses an ATOM™ chip with a PCIe Gen5 x16 interface. The card supports PCIe 5.0 with 32 GT/s. The PCIe only can be configured to 16 lanes interfaces for either Gen5 specification or the lower specifications without supporting bifurcation.</p>
+<h2 id="satellite-management-controller-smc">Satellite Management Controller (SMC)</h2>
+<p>A CEC1736 resides on the RBLN-CA12 to control and monitor voltages, current and temperatures. The host server Board Management Controller (BMC) can interact with the SMC to monitor and control the card through out-of-band communication. RBLN SDK supports the PLDM protocol over MCTP SMBus, complying with DMTF standards. Using RBLN SDK, customers can conveniently monitor for any abnormal operation conditions and react proactively.  </p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
@@ -350,6 +366,7 @@ Table 4.  Board Environmental and Reliability Specifications
 <script src="../js/theme_extra.js"></script>
 <script src="../js/theme.js"></script>
 <script src="../search/main.js"></script>
+<script src="../js/version-select.js"></script>
 <script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);

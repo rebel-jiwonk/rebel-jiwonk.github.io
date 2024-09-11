@@ -255,16 +255,35 @@ The RBLN-CA12 accelerator card and its thermal management device should be store
 ## Form Factor
 
 <figure markdown="span">
-  <img src="../assets/images/rblnca12_figure_3.png" alt="Figure 3">
+  <img src="../assets/images/rblnca12_figure_3-1.png" alt="Figure 3">
   <figcaption>
  (CARD DIMENSIONS)
   </figcaption>
 </figure>
 
 <figure markdown="span">
-  <img src="../assets/images/rblnca12_figure_4-1.png" alt="Figure 4">
-  <img src="../assets/images/rblnca12_figure_4-2.png" alt="Figure 4">
+  <img src="../assets/images/rblnca12_figure_3-2.png" alt="Figure 3">
+  <img src="../assets/images/rblnca12_figure_3-3.png" alt="Figure 3">
   <figcaption>
  (ISOVIEW) <br> Figure 3. RBLN-CA12 PCIe Card Dimensions
   </figcaption>
 </figure>
+
+## Board Diagram
+
+Figure 4 shows the components of the RBLN-CA12 card with the ATOM™ chip. The card has a Satellite Management Controller (SMC) that performs board management operations while communicating to the host or BMC units via SMBus interfaces.
+
+<figure markdown="span">
+  <img src="../assets/images/rblnca12_figure_4.png" alt="Figure 4">
+  <figcaption>
+ (ISOVIEW) <br> Figure 4. RBLN-CA12 Board Diagram
+  </figcaption>
+</figure>
+
+## PCI Connector/Data Rate
+
+The RBLN-CA12 card uses an ATOM™ chip with a PCIe Gen5 x16 interface. The card supports PCIe 5.0 with 32 GT/s. The PCIe only can be configured to 16 lanes interfaces for either Gen5 specification or the lower specifications without supporting bifurcation.
+
+## Satellite Management Controller (SMC)
+
+A CEC1736 resides on the RBLN-CA12 to control and monitor voltages, current and temperatures. The host server Board Management Controller (BMC) can interact with the SMC to monitor and control the card through out-of-band communication. RBLN SDK supports the PLDM protocol over MCTP SMBus, complying with DMTF standards. Using RBLN SDK, customers can conveniently monitor for any abnormal operation conditions and react proactively.  
