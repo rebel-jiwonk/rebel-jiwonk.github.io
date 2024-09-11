@@ -32,3 +32,28 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.wy-side-nav-search>div.version {
+    display: none !important;
+}
+
+.product-title {
+    font-size: 1em;  /* Adjust to the desired size */
+    text-align: left;  /* Ensure left alignment */
+    font-weight: bold;  /* Make it bold if needed */
+    margin-bottom: 1em;  /* Adjust the space between elements */
+}
+
+.product-data-sheet {
+    font-size: 3em;  /* Adjust to the desired size */
+    text-align: left;  /* Ensure left alignment */
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.product-pn {
+    font-size: 1em;  /* Smaller font for part number */
+    text-align: left;  /* Ensure left alignment */
+    font-style: italic;  /* Optional: make it italic */
+    margin-bottom: 2em;
+}

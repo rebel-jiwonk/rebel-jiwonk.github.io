@@ -29,9 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
                 versionSelect.appendChild(option);
             });
         });
-
-    // Function to change the version when a new one is selected
-    function changeVersion(version) {
-        window.location.href = version;
-    }
 });
