@@ -21,7 +21,6 @@ plugins:
         combined: false
 extra_css:
   - extra.css
-
 extra:
   version:
     alias: true
