@@ -8,14 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Use backticks to define a multi-line template literal string
     versionDropdown.innerHTML = `
+    <div class="version-dropdown-wrapper">
       <div class="version-dropdown">
-        <label for="version-select">Version: </label>
+        <label for="version-select">Version</label>
         <select id="version-select" onchange="changeVersion(this.value)">
         </select>
       </div>
+    </div>
     `;  // Note: The innerHTML content is now enclosed in backticks.
-    
-    document.body.prepend(versionDropdown);  // Add the dropdown at the top of the page
+    document.getElementsByClassName('wy-nav-content')[0].prepend(versionDropdown);
 
     // Function to load versions.json and populate the dropdown
     fetch('/versions.json')

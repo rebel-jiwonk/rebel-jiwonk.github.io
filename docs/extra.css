@@ -54,14 +54,28 @@ img {
     margin-bottom: 2em;
 }
 
-.version-dropdown {
-    display: block;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #f2f4f3;
-    border: 1px solid #ccc;
-    color: #333;
-    font-size: 0.5em;
+.version-dropdown-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    
 }
 
+.version-dropdown {
 
+    display: flex;
+    font-size: 14px;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.version-dropdown label {
+    margin-top: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.version-dropdown select {
+    border: 1px solid #e5e5e5;
+    background: none;
+    box-shadow: none;
+}
