@@ -1,14 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Versioning script is loaded and running');
+    // Rest of the script...
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const versionDropdown = document.createElement('div');
+    
+    // Use backticks to define a multi-line template literal string
     versionDropdown.innerHTML = `
+    <div class="version-dropdown-wrapper">
       <div class="version-dropdown">
-        <label for="version-select">Version: </label>
+        <label for="version-select">Version</label>
         <select id="version-select" onchange="changeVersion(this.value)">
-          <!-- Options will be inserted here -->
         </select>
       </div>
-    `;
-    document.body.prepend(versionDropdown);  // Add the dropdown at the top of the page
+    </div>
+    `;  // Note: The innerHTML content is now enclosed in backticks.
+    document.getElementsByClassName('wy-nav-content')[0].prepend(versionDropdown);
 
     // Function to load versions.json and populate the dropdown
     fetch('/versions.json')
@@ -28,7 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 versionSelect.appendChild(option);
             });
-        });
+        })
+        .catch(error => console.error('Error loading versions.json:', error));  // Catch any errors
 
     // Function to change the version when a new one is selected
     function changeVersion(version) {
