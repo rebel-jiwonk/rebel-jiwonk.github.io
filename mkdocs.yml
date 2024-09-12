@@ -10,7 +10,7 @@ theme:
     name: readthedocs
     include_sidebar: true
 extra_javascript:
-  - assets/js/versioning.js
+    - assets/js/versioning.js
 markdown_extensions:
     - md_in_html
     - toc:
@@ -25,5 +25,5 @@ extra_css:
   - extra.css
 
 extra:
-  version:
-    provider: mike
+    version:
+        provider: mike
