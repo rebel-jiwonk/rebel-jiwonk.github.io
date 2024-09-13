@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Versioning script is loaded and running');
-
+    // Rest of the script...
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -18,27 +18,33 @@ document.addEventListener('DOMContentLoaded', function() {
     `;  // Note: The innerHTML content is now enclosed in backticks.
     document.getElementsByClassName('wy-nav-content')[0].prepend(versionDropdown);
 
-    // Function to load versions.json and populate the dropdown
-    fetch('/versions.json')
-        .then(response => response.json())
-        .then(versions => {
-            const versionSelect = document.getElementById('version-select');
-            const currentVersion = window.location.pathname.split('/')[1] || 'latest';
-
-            versions.forEach(versionInfo => {
-                const option = document.createElement('option');
-                option.value = `/${versionInfo.version}/`;  // Set the URL to the version folder
-                option.textContent = versionInfo.title;     // Display the version title
-                if (versionInfo.version === currentVersion) {
-                    option.selected = true;
-                }
-                versionSelect.appendChild(option);
-            });
-        })
-        .catch(error => console.error('Error loading versions.json:', error));  // Catch any errors
 
     // Function to change the version when a new one is selected
-    function changeVersion(version) {
-        window.location.href = version;
-    }
+    
 });
+
+function changeVersion(version) {
+    window.location.href = version;
+}
+
+
+// Function to load versions.json and populate the dropdown
+fetch('/versions.json')
+.then(response => response.json())
+.then(versions => {
+    const versionSelect = document.getElementById('version-select');
+    const currentVersion = window.location.pathname.split('/')[1] || 'latest';
+
+    versions.forEach(versionInfo => {
+        const option = document.createElement('option');
+        option.value = `/${versionInfo.version}/`;  // Set the URL to the version folder
+        option.textContent = versionInfo.title;     // Display the version title
+        if (versionInfo.aliases.includes('latest') && currentVersion === '') {
+            option.selected = true;
+        } else if (versionInfo.version === currentVersion) {
+            option.selected = true;
+        }
+        versionSelect.appendChild(option);
+    });
+})
+.catch(error => console.error('Error loading versions.json:', error));  // Catch any errors
