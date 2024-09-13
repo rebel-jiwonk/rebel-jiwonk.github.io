@@ -1,0 +1,81 @@
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 100% !important; /* This ensures all tables take up 100% of the available width */
+    max-width: 1200px; /* Optional: Sets a maximum width for tables on larger screens */
+    table-layout: fixed;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    width: 100% !important;
+}
+
+.note {
+    font-size: 0.75em; /* Smaller font for the note */
+    color: #666; /* Lighter color to differentiate it from regular text */
+    text-align: left;
+    margin-top: 5px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-title {
+    font-size: 1em;  /* Adjust to the desired size */
+    text-align: left;  /* Ensure left alignment */
+    font-weight: bold;  /* Make it bold if needed */
+    margin-bottom: 1em;  /* Adjust the space between elements */
+}
+
+.product-data-sheet {
+    font-size: 3em;  /* Adjust to the desired size */
+    text-align: left;  /* Ensure left alignment */
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.product-pn {
+    font-size: 1em;  /* Smaller font for part number */
+    text-align: left;  /* Ensure left alignment */
+    font-style: italic;  /* Optional: make it italic */
+    margin-bottom: 2em;
+}
+
+.version-dropdown-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.version-dropdown {
+
+    display: flex;
+    font-size: 14px;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.version-dropdown label {
+    margin-top: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.version-dropdown select {
+    border: 1px solid #e5e5e5;
+    background: none;
+    box-shadow: none;
+}
