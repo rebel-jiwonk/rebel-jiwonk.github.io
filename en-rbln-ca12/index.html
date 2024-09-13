@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://rebel-jiwon.github.io/en-rbln-ca12/" rel="canonical"/>
 <link href="../img/favicon.ico" rel="shortcut icon"/>
 <title>English - Rebellions Datasheet</title>
 <link href="../css/theme.css" rel="stylesheet"/>
@@ -15,7 +15,7 @@
         // Current page data
         var mkdocs_page_name = "English";
         var mkdocs_page_input_path = "en-rbln-ca12.md";
-        var mkdocs_page_url = null;
+        var mkdocs_page_url = "/en-rbln-ca12/";
       </script>
 <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
@@ -29,7 +29,10 @@
 <div class="wy-side-scroll">
 <div class="wy-side-nav-search">
 <a class="icon icon-home" href=".."> Rebellions Datasheet
-        </a><div role="search">
+        </a>
+<div class="version">
+          {'provider': 'mike'}
+        </div><div role="search">
 <form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
 <input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
 </form>
@@ -38,10 +41,6 @@
 <div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Datasheets</span></p>
@@ -79,7 +78,10 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="1-overview">1. Overview</h1>
+<div class="product-title">RBLN-CA12</div>
+<div class="product-data-sheet">PRODUCT<br/>DATA SHEET</div>
+<div class="product-pn">(P/N: RBABB1G6ANBD)</div>
+<h1 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">¶</a></h1>
 <hr/>
 <p>The Rebellions RBLN-CA12 accelerator card is a full height, full-length (FHFL), single-slot 10.5-inch PCI Express Gen5 equipped with ATOM™, Rebellions’ System-on-Chip (SoC) designed for deep learning inference. The card is passively cooled.</p>
 <p>RBLN-CA12 supports AI inference tasks for various neural network models, including Convolutional Neural Network, Recurrent Neural Network, and Transformers. The card mainly targets inference acceleration on edge-computing platforms as well as High Performance Computing (HPC) workloads. It can be deployed in cloud data center for scalable AI applications.</p>
@@ -89,9 +91,9 @@
   Figure 1. Rebellions RBLN-CA12 PCIe Card (FHFL, Single Slot)
   </figcaption>
 </figure>
-<h1 id="2-specifications">2. Specifications</h1>
+<h1 id="2-specifications">2. Specifications<a class="headerlink" href="#2-specifications" title="Permanent link">¶</a></h1>
 <hr/>
-<h2 id="21-product-specifications">2.1. Product Specifications</h2>
+<h2 id="21-product-specifications">2.1. Product Specifications<a class="headerlink" href="#21-product-specifications" title="Permanent link">¶</a></h2>
 <p>Table 1 through Table 3 provide the product, memory, and software specifications for the RBLN-CA12 PCIe card.</p>
 <figcaption>
   Table 1. Product Specifications
@@ -247,7 +249,7 @@
 <td>0xCA (write) / 0XCB (read)</td>
 </tr>
 </table>
-<h2 id="22-environmental-and-reliability-specifications">2.2. Environmental and Reliability Specifications</h2>
+<h2 id="22-environmental-and-reliability-specifications">2.2. Environmental and Reliability Specifications<a class="headerlink" href="#22-environmental-and-reliability-specifications" title="Permanent link">¶</a></h2>
 <p>Table 4 provides the environment conditions specifications for the RBLN-CA12 PCIe card.</p>
 <figcaption>
 Table 4.  Board Environmental and Reliability Specifications
@@ -289,7 +291,7 @@ Table 4.  Board Environmental and Reliability Specifications
 <p class="note">Notes: Specifications in this table are applicable up to 6000 feet.<br/>
 1. A period not more than 96 hours consecutive, not to exceed 15 days per year.<br/>
 2. No environmental stress with optimum operation and maintenance (GB35).</p>
-<h3 id="airflow-direction">Airflow Direction</h3>
+<h3 id="airflow-direction">Airflow Direction<a class="headerlink" href="#airflow-direction" title="Permanent link">¶</a></h3>
 <p>Passive cooling cards do not include a built-in fan and therefore require an external mechanism to ensure proper airflow for cooling. Passive cooling cards should be powered withs a forced airflow mechanism in place. The passively cooled RBLN-CA12 card supports bidirectional airflow as illustrated in Figure 6.</p>
 <figure>
 <img alt="Figure 2" src="../assets/images/rblnca12_figure_2.png"/>
@@ -298,34 +300,46 @@ Table 4.  Board Environmental and Reliability Specifications
   </figcaption>
 </figure>
 <p class="note">Notes: Conditions other than bidirectional flow are also possible. However, this is specific to server configurations, and testing is performed by individual OEMs. Contact your server provider for more information and options.</p>
-<h3 id="operating-conditions">Operating Conditions</h3>
+<h3 id="operating-conditions">Operating Conditions<a class="headerlink" href="#operating-conditions" title="Permanent link">¶</a></h3>
 <p>Details of operating conditions be updated in the official v1.0 document.</p>
-<h4 id="temperature-gradient"><em>Temperature Gradient</em></h4>
+<h4 id="temperature-gradient"><em>Temperature Gradient</em><a class="headerlink" href="#temperature-gradient" title="Permanent link">¶</a></h4>
 <p>The RBLN-CA12 accelerator card and its thermal management device should be able to operate at a temperature/time gradient of 15°C/hour in its ambient surroundings. The thermal management device is the heat sink, shroud, backplate, top plate, and fan (for active solutions).</p>
-<h4 id="humidity"><em>Humidity</em></h4>
+<h4 id="humidity"><em>Humidity</em><a class="headerlink" href="#humidity" title="Permanent link">¶</a></h4>
 <p>The RBLN-CA12 accelerator card and its thermal management device should be able to operate in a RH (relative humidity) range of 8% to 90%.</p>
-<h4 id="storage-and-non-operating-conditions"><em>Storage and Non-Operating Conditions</em></h4>
+<h4 id="storage-and-non-operating-conditions"><em>Storage and Non-Operating Conditions</em><a class="headerlink" href="#storage-and-non-operating-conditions" title="Permanent link">¶</a></h4>
 <p>The RBLN-CA12 accelerator card and its thermal management device should be stored or maintained in non-operating conditions in a RH range of 5% to 95% without condensation and an ambient temperature range of –40°C to 85°C.</p>
-<h1 id="3-architectural-features">3. Architectural Features</h1>
+<h1 id="3-architectural-features">3. Architectural Features<a class="headerlink" href="#3-architectural-features" title="Permanent link">¶</a></h1>
 <hr/>
-<h2 id="form-factor">Form Factor</h2>
+<h2 id="form-factor">Form Factor<a class="headerlink" href="#form-factor" title="Permanent link">¶</a></h2>
 <figure>
-<img alt="Figure 3" src="../assets/images/rblnca12_figure_3.png"/>
+<img alt="Figure 3" src="../assets/images/rblnca12_figure_3-1.png"/>
 <figcaption>
  (CARD DIMENSIONS)
   </figcaption>
 </figure>
 <figure>
-<img alt="Figure 4" src="../assets/images/rblnca12_figure_4-1.png"/>
-<img alt="Figure 4" src="../assets/images/rblnca12_figure_4-2.png"/>
+<img alt="Figure 3" src="../assets/images/rblnca12_figure_3-2.png"/>
+<img alt="Figure 3" src="../assets/images/rblnca12_figure_3-3.png"/>
 <figcaption>
  (ISOVIEW) <br/> Figure 3. RBLN-CA12 PCIe Card Dimensions
   </figcaption>
 </figure>
+<h2 id="board-diagram">Board Diagram<a class="headerlink" href="#board-diagram" title="Permanent link">¶</a></h2>
+<p>Figure 4 shows the components of the RBLN-CA12 card with the ATOM™ chip. The card has a Satellite Management Controller (SMC) that performs board management operations while communicating to the host or BMC units via SMBus interfaces.</p>
+<figure>
+<img alt="Figure 4" src="../assets/images/rblnca12_figure_4.png"/>
+<figcaption>
+ (ISOVIEW) <br/> Figure 4. RBLN-CA12 Board Diagram
+  </figcaption>
+</figure>
+<h2 id="pci-connectordata-rate">PCI Connector/Data Rate<a class="headerlink" href="#pci-connectordata-rate" title="Permanent link">¶</a></h2>
+<p>The RBLN-CA12 card uses an ATOM™ chip with a PCIe Gen5 x16 interface. The card supports PCIe 5.0 with 32 GT/s. The PCIe only can be configured to 16 lanes interfaces for either Gen5 specification or the lower specifications without supporting bifurcation.</p>
+<h2 id="satellite-management-controller-smc">Satellite Management Controller (SMC)<a class="headerlink" href="#satellite-management-controller-smc" title="Permanent link">¶</a></h2>
+<p>A CEC1736 resides on the RBLN-CA12 to control and monitor voltages, current and temperatures. The host server Board Management Controller (BMC) can interact with the SMC to monitor and control the card through out-of-band communication. RBLN SDK supports the PLDM protocol over MCTP SMBus, complying with DMTF standards. Using RBLN SDK, customers can conveniently monitor for any abnormal operation conditions and react proactively.  </p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../about/" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-left" href=".." title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
 <a class="btn btn-neutral float-right" href="../cn-rbln-ca12/" title="Chinese">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
@@ -341,7 +355,7 @@ Table 4.  Board Environmental and Reliability Specifications
 </div>
 <div aria-label="Versions" class="rst-versions" role="note">
 <span class="rst-current-version" data-toggle="rst-current-version">
-<span><a href="../about/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href=".." style="color: #fcfcfc">« Previous</a></span>
 <span><a href="../cn-rbln-ca12/" style="color: #fcfcfc">Next »</a></span>
 </span>
 </div>
@@ -349,6 +363,7 @@ Table 4.  Board Environmental and Reliability Specifications
 <script>var base_url = "..";</script>
 <script src="../js/theme_extra.js"></script>
 <script src="../js/theme.js"></script>
+<script src="../assets/js/versioning.js"></script>
 <script src="../search/main.js"></script>
 <script>
         jQuery(function () {
