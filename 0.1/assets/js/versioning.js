@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Versioning script is loaded and running');
-
+    // Rest of the script...
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const option = document.createElement('option');
                 option.value = `/${versionInfo.version}/`;  // Set the URL to the version folder
                 option.textContent = versionInfo.title;     // Display the version title
-                if (versionInfo.version === currentVersion) {
+                if (versionInfo.aliases.includes('latest') && currentVersion === '') {
+                    option.selected = true;
+                } else if (versionInfo.version === currentVersion) {
                     option.selected = true;
                 }
                 versionSelect.appendChild(option);
