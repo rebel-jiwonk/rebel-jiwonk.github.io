@@ -281,9 +281,7 @@ Figure 4 shows the components of the RBLN-CA12 card with the ATOM™ chip. The c
 
 <figure markdown="span">
   <img src="../assets/images/rblnca12_figure_4.png" alt="Figure 4">
-  <figcaption>
- (ISOVIEW) <br> Figure 4. RBLN-CA12 Board Diagram
-  </figcaption>
+  <figcaption>Figure 4. RBLN-CA12 Board Diagram</figcaption>
 </figure>
 
 ## PCI Connector/Data Rate
