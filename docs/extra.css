@@ -54,13 +54,13 @@ img {
     margin-bottom: 2em;
 }
 
-/* .version-dropdown-wrapper {
+.version-dropdown-wrapper {
     display: flex;
     justify-content: flex-end;
     
-} */
+}
 
-/* .version-dropdown {
+.version-dropdown {
 
     display: flex;
     font-size: 14px;
@@ -78,4 +78,4 @@ img {
     border: 1px solid #e5e5e5;
     background: none;
     box-shadow: none;
-} */
+}
