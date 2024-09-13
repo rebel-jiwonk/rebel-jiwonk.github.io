@@ -1,5 +1,5 @@
 site_name: Rebellions Datasheet
-site_url: http://localhost/
+site_url: https://rebel-jiwon.github.io
 nav:
     - Home: index.md
     - Datasheets:
@@ -21,19 +21,12 @@ plugins:
         verbose: true
         media_type: pdf-export
         combined: false
-    - mike:
-      # These fields are all optional; the defaults are as below...
-        #alias_type: symlink
-        #redirect_template: null
-       # deploy_prefix: ''
-        #canonical_version: null
-        #version_selector: true
-        #css_dir: css
-        #javascript_dir: js
-extra_css:
-  - extra.css
+    - mike
 
-# extra:
-    # version:
-        # provider: mike
+extra_css:
+    - extra.css
+
+extra:
+    version:
+        provider: mike
 
