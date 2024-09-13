@@ -1,12 +1,39 @@
 site_name: Rebellions Datasheet
+site_url: http://localhost/
 nav:
     - Home: index.md
-    - About: about.md
     - Datasheets:
         - RBLN-CA12:
             - English: en-rbln-ca12.md
             - Chinese: cn-rbln-ca12.md
-theme: readthedocs
+theme: 
+    name: readthedocs
+    include_sidebar: true
+extra_javascript:
+    - assets/js/versioning.js
+markdown_extensions:
+    - md_in_html
+    - toc:
+        permalink: true
 plugins:
     - search
-    - pdf-export
+    - pdf-export:
+        verbose: true
+        media_type: pdf-export
+        combined: false
+    - mike:
+      # These fields are all optional; the defaults are as below...
+        #alias_type: symlink
+        #redirect_template: null
+       # deploy_prefix: ''
+        #canonical_version: null
+        #version_selector: true
+        #css_dir: css
+        #javascript_dir: js
+extra_css:
+  - extra.css
+
+# extra:
+    # version:
+        # provider: mike
+
