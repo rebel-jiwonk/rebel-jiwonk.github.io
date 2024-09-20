@@ -31,5 +31,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-          mike deploy dev
+          mike deploy
           mike set-default dev --push
