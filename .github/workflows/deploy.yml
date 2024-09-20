@@ -3,10 +3,6 @@ name: Deploy Site
 on:
   workflow_dispatch:
   push:
-    paths:
-      - 'docs/**'
-      - 'mkdocs.yml'
-      - 'requirements.txt'
     branches:
       - main
     tags-ignore:
